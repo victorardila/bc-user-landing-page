@@ -1,4 +1,5 @@
 # Proyecto Landing Page BeatConnect
+
 Página de aterrizaje para la gestión de usuarios de la aplicación BeatConnect. Su propósito principal es permitir a los usuarios eliminar sus cuentas de manera fácil y segura.
 
 ![logo](https://github.com/user-attachments/assets/33d03376-f4b0-4655-a650-2d0aed790f76)
