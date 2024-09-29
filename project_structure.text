@@ -1,0 +1,26 @@
+- .astro
+  - settings.json
+  - types.d.ts
+- .gitignore
+- README.md
+- astro.config.mjs
+- package-lock.json
+- package.json
+- public
+  - favicon.svg
+- src
+  - assets
+    - ico
+      - icon.ico
+    - img
+      - logo.png
+  - components
+    - Card.astro
+  - env.d.ts
+  - layouts
+    - Layout.astro
+  - pages
+    - eliminar-cuenta.astro
+    - index.astro
+  - styles.css
+- tsconfig.json
