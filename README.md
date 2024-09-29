@@ -4,7 +4,7 @@ Página de aterrizaje para la gestión de usuarios de la aplicación BeatConnect
 ![logo](https://github.com/user-attachments/assets/9912c203-a365-4369-9f94-50df3725ff6a)
 
 
-## Tercnologia implementada Astro Starter Kit: Basics
+## Tercnologia Frontend Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
