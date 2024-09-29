@@ -1,14 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/styles.css'; // Importa el archivo CSS aquí
-import svgLogo from '../assets/svg/logo.svg'; // Importa el archivo SVG aquí
-import logo from '../assets/img/logo.png'; // Importa el archivo PNG aquí
-import exampleForUser from '../assets/img/example-to-users.png'; // Importa el archivo PNG aquí
-import { 
+import Layout from "../layouts/Layout.astro";
+import "../styles/styles.css"; // Importa el archivo CSS aquí
+import svgLogo from "../assets/svg/logo_blank.svg";
+import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
+import exampleForUser from "../assets/img/example-to-users.png"; // Importa el archivo PNG aquí
+import {
   faTrash,
   faUser,
   faEnvelopeOpenText,
- } from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Función para obtener el año actual
 export function getYear() {
@@ -16,26 +16,36 @@ export function getYear() {
 }
 ---
 
-
 <Layout title="Eliminar Cuenta - BeatConnect">
   <main>
     <header id="header" style="position: relative; overflow: hidden;">
-		<div style={`
+      <div
+        style={`
 		background-color: rgba(0, 0, 0, 0.6);
-		position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url(${exampleForUser.src}); background-size: cover; background-position: center; filter: blur(2px); z-index: 0;`}></div>
-		
-		<div style="position: relative; z-index: 1;">
-		  <img src={logo.src} alt="BeatConnect" style="width: 10em; height: 10em;" />
-		  <h1>Eliminación de Cuenta</h1>
-		  <p>
-			Si deseas eliminar tu cuenta o solicitar la eliminación de tus datos de nuestra aplicación, por favor sigue los pasos a continuación.
-		  </p>
-		</div>
-	</header>
+		position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url(${exampleForUser.src}); background-size: cover; background-position: center; filter: blur(2px); z-index: 0;`}
+      >
+      </div>
+
+      <div style="position: relative; z-index: 1;">
+        <img
+          src={logo.src}
+          alt="BeatConnect"
+          style="width: 10em; height: 10em;"
+        />
+        <h1>Eliminación de Cuenta</h1>
+        <p>
+          Si deseas eliminar tu cuenta o solicitar la eliminación de tus datos
+          de nuestra aplicación, por favor sigue los pasos a continuación.
+        </p>
+      </div>
+    </header>
 
     <section id="delete-account">
       <h2>Solicitud de Eliminación de Cuenta</h2>
-      <p>Para solicitar la eliminación de tu cuenta, por favor completa el formulario a continuación.</p>
+      <p>
+        Para solicitar la eliminación de tu cuenta, por favor completa el
+        formulario a continuación.
+      </p>
       <form action="https://tu-dominio/api/eliminar-cuenta" method="POST">
         <div class="info-label">
           <FontAwesomeIcon icon={faUser} />
@@ -56,17 +66,25 @@ export function getYear() {
       </form>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>¿Necesitas ayuda?</h2>
-      <p>Si tienes alguna pregunta o necesitas asistencia adicional, puedes contactarnos en:</p>
+      <p>
+        Si tienes alguna pregunta o necesitas asistencia adicional, puedes
+        contactarnos en:
+      </p>
       <p><a href="mailto:soporte@tudominio.com">beatconnet@gmail.com</a></p>
     </section>
   </main>
 
   <footer>
-	<p>&copy; {getYear()} 
-	  <img src={svgLogo.src} alt="BeatConnect" style="width: 1.5em; height: 1.5em;" />
-	  BeatConnect. Todos los derechos reservados.
-	</p>
+    <p>
+      &copy; {getYear()}
+      <img
+        src={svgLogo.src}
+        alt="BeatConnect"
+        style="width: 1.5em; height: 1.5em; margin: 0 10px;"
+      />
+      BeatConnect. Todos los derechos reservados.
+    </p>
   </footer>
 </Layout>

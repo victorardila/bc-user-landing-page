@@ -105,6 +105,13 @@ section {
   flex-direction: column;
   padding: 10px;
 }
+.contact h2 {
+  margin: 0;
+}
+.contact p {
+  font-size: 20px;
+  margin: 0;
+}
 .info-label {
   display: flex;
   flex-direction: row;
