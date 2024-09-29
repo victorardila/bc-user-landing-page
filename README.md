@@ -1,4 +1,10 @@
-# Astro Starter Kit: Basics
+# Proyecto Landing Page BeatConnect
+Página de aterrizaje para la gestión de usuarios de la aplicación BeatConnect. Su propósito principal es permitir a los usuarios eliminar sus cuentas de manera fácil y segura.
+
+![logo](https://github.com/user-attachments/assets/9912c203-a365-4369-9f94-50df3725ff6a)
+
+
+## Tercnologia implementada Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
