@@ -1,38 +1,16 @@
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
+.container-delete-account {
+  width: -webkit-fill-available;
+  height: 100%;
+  margin: 0px;
+  border-radius: 20px;
   padding: 0;
-  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
-  overflow: hidden; /* Para evitar que el pseudo-elemento se salga del body */
 }
 
-body::before {
-  content: ""; /* Necesario para que el pseudo-elemento se muestre */
-  position: absolute; /* Posicionamiento absoluto */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../assets/img/design.png");
-  background-size: 15% auto;
-  background-position: center;
-  background-repeat: repeat;
-  background-color: #3d9df2; /* Color de fondo por defecto */
-  filter: blur(3px); /* Aplica el blur solo a la imagen de fondo */
-  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
-}
-
-header {
+.header-delete-account {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   background-color: #333;
   color: white;
   text-align: center;

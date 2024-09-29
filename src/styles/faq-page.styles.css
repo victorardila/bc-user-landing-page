@@ -1,0 +1,22 @@
+.container-faq-page {
+  width: -webkit-fill-available;
+  height: 100%;
+  margin: 0px;
+  border-radius: 0;
+  padding: 0;
+}
+
+.header-faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+.content-faq {
+  display: flex;
+  height: 100%;
+}
