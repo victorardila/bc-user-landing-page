@@ -26,6 +26,20 @@ body::before {
   filter: blur(4px); /* Aplica el blur solo a la imagen de fondo */
   z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  display: flex;
+  margin: 0;
+}
 .container-pages {
   display: flex;
   flex-direction: column;

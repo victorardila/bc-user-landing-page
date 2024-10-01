@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import DropDownQuestion from "../components/drop-down-question.astro";
+import DropDown from "../components/drop-down.tsx";
 import "../styles/faq-page.styles.css"; // Importa el archivo CSS aquí
 import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
 
@@ -9,33 +9,39 @@ const faqData = [
     question: "¿Cómo puedo eliminar mi cuenta?",
     answer:
       "Para eliminar tu cuenta, ve a la sección de Eliminación de Cuenta y completa el formulario con tu correo electrónico y motivo. Nuestro equipo procesará tu solicitud en un plazo de 48 horas.",
+    hasButton: true, // Campo adicional para mostrar el botón
+    url: "/delete-account", // URL de la página de eliminación de cuenta
   },
   {
     question: "¿Qué pasa con mis datos después de eliminar mi cuenta?",
     answer:
       "Una vez que tu cuenta sea eliminada, todos tus datos personales serán eliminados permanentemente de nuestros servidores, conforme a nuestra Política de Privacidad.",
+    hasButton: false,
   },
   {
     question: "¿Puedo recuperar mi cuenta después de eliminarla?",
     answer:
       "No, una vez que elimines tu cuenta, no será posible recuperarla. Si deseas volver a usar nuestra aplicación, tendrás que crear una nueva cuenta.",
+    hasButton: false,
   },
   {
     question: "¿Qué debo hacer si no recibo confirmación de eliminación?",
     answer:
       "Si no recibes confirmación en un plazo de 48 horas, por favor contacta a nuestro equipo de soporte en beatconnect@gmail.com.",
+    hasButton: false,
   },
   {
     question: "¿Qué datos personales recopila la aplicación?",
     answer:
       "Recopilamos los datos necesarios para el funcionamiento de la aplicación, como tu correo electrónico, nombre de usuario y otros datos proporcionados voluntariamente. Para más información, revisa nuestra Política de Privacidad.",
+    hasButton: false,
   },
 ];
 ---
 
 <Layout title="Preguntas Frecuentes - BeatConnect">
   <main class="container-faq-page">
-    <header class="header-faq" style="text-align: center; padding: 2em 0;">
+    <header class="header-faq">
       <img src={logo.src} alt="BeatConnect" style="width: 8em; height: 8em;" />
       <h1>Preguntas Frecuentes</h1>
       <p>
@@ -46,71 +52,19 @@ const faqData = [
 
     <section class="content-faq">
       <h2>Lista de preguntas</h2>
-
-      {
-        faqData.map((item) => (
-          <DropDownQuestion
-            key={item.question}
-            Agrega
-            una
-            clave
-            única
-            para
-            cada
-            elemento
-            question={item.question}
-            answer={item.answer}
-          />
-        ))
-      }
+      <div class="faq-list">
+        {
+          faqData.map((item, index) => (
+            <DropDown
+              client:load
+              question={item.question}
+              answer={item.answer}
+              hasButton={item.hasButton}
+              url={item.url}
+            />
+          ))
+        }
+      </div>
     </section>
-    <!-- <div class="faq-item">
-        <h3>¿Cómo puedo eliminar mi cuenta?</h3>
-        <p>
-          Para eliminar tu cuenta, ve a la sección de <a href="/delete-account"
-            >Eliminación de Cuenta</a
-          > y completa el formulario con tu correo electrónico y motivo. Nuestro
-          equipo procesará tu solicitud en un plazo de 48 horas.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3>¿Qué pasa con mis datos después de eliminar mi cuenta?</h3>
-        <p>
-          Una vez que tu cuenta sea eliminada, todos tus datos personales serán
-          eliminados permanentemente de nuestros servidores, conforme a nuestra <a
-            href="/politica-de-privacidad">Política de Privacidad</a
-          >.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3>¿Puedo recuperar mi cuenta después de eliminarla?</h3>
-        <p>
-          No, una vez que elimines tu cuenta, no será posible recuperarla. Si
-          deseas volver a usar nuestra aplicación, tendrás que crear una nueva
-          cuenta.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3>¿Qué debo hacer si no recibo confirmación de eliminación?</h3>
-        <p>
-          Si no recibes confirmación en un plazo de 48 horas, por favor contacta
-          a nuestro equipo de soporte en <a href="mailto:soporte@tudominio.com"
-            >beatconnect@gmail.com</a
-          >.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h3>¿Qué datos personales recopila la aplicación?</h3>
-        <p>
-          Recopilamos los datos necesarios para el funcionamiento de la
-          aplicación, como tu correo electrónico, nombre de usuario y otros
-          datos proporcionados voluntariamente. Para más información, revisa
-          nuestra <a href="/politica-de-privacidad">Política de Privacidad</a>.
-        </p>
-      </div> -->
   </main>
 </Layout>

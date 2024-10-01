@@ -3,6 +3,7 @@
   height: 100%;
   margin: 0px;
   border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.92);
   padding: 0;
 }
 
@@ -16,7 +17,40 @@
   text-align: center;
   padding: 1rem 0;
 }
+.header-faq h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.header-faq p {
+  font-size: 1rem;
+  margin: 0;
+}
 .content-faq {
   display: flex;
+  flex-direction: column;
+  height: 58vh;
+  padding: 20px;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
+  overflow-y: auto;
   height: 100%;
+  padding: 10px;
+}
+
+/* Personalizar el scrollbar (solo para navegadores basados en WebKit como Chrome y Safari) */
+.faq-list::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+.faq-list::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la barra */
+  border-radius: 10px; /* Redondear el scrollbar */
+}
+
+.faq-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color al pasar el cursor sobre el scrollbar */
 }

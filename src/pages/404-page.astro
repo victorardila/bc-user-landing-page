@@ -1,6 +1,13 @@
 ---
+import Layout from "../layouts/Layout.astro";
+
 // 404-page.astro
 ---
 
-<h1>Página No Encontrada</h1>
-<p>Lo sentimos, la página que estás buscando no existe.</p>
+<Layout title="Página no encontrada">
+  <div class="container">
+    <h1>404</h1>
+    <h2>Página no encontrada</h2>
+    <p>La página que buscas no existe.</p>
+  </div>
+</Layout>

@@ -3,10 +3,15 @@
   height: 100%;
   margin: 0px;
   border-radius: 20px;
-  padding: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px 10%;
+  border-radius: 20px;
 }
 
 .header-delete-account {
+  position: relative;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,51 +20,82 @@
   color: white;
   text-align: center;
   padding: 1rem 0;
+  overflow: hidden;
 }
-
-header h1 {
+.header-bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -132px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  z-index: 0;
+}
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+.header-content img {
+  width: 10em;
+  height: 10em;
+}
+.header-content h1 {
   margin: 0;
+  color: #fff;
 }
 
-header p {
+.header-content p {
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
 }
 
-footer {
+.delete-account-form {
   display: flex;
-  justify-content: center;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+  flex-direction: column;
+  padding: 10px;
 }
 
-main {
-  width: 60%;
-  border-radius: 10px;
-  height: 86.2vh;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.92);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  color: #fff;
-}
-h2 {
+.delete-account-form h2 {
   color: #000;
 }
-
-label {
-  display: block;
-  margin-top: 10px;
+.delete-account-form p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.form-delete-account {
+  display: flex;
+  flex-direction: column;
+}
+.info-label {
+  display: flex;
+  flex-direction: row;
+  width: -webkit-fill-available;
+  height: 30px;
+  align-items: center;
+  margin-right: 20px;
+}
+.info-label svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
-input,
-textarea {
+.info-label label {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form-delete-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-delete-account input {
   width: -webkit-fill-available;
   padding: 10px;
   margin-top: 5px;
@@ -68,7 +104,16 @@ textarea {
   border: 1px solid #ddd;
 }
 
-button {
+.form-delete-account textarea {
+  width: -webkit-fill-available;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-delete-account button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,25 +125,22 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
+  max-width: 40%;
   cursor: pointer;
 }
-button svg {
+.form-delete-account button svg {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-button:hover {
+.form-delete-account button:hover {
   background-color: #218838;
 }
-
-footer p {
-  display: flex;
-  margin: 0;
-}
-
-section {
+.contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 .contact h2 {
@@ -106,21 +148,5 @@ section {
 }
 .contact p {
   font-size: 20px;
-  margin: 0;
-}
-.info-label {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 30px;
-  align-items: center;
-  margin-right: 20px;
-}
-.info-label svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-.info-label label {
   margin: 0;
 }
