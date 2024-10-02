@@ -18,11 +18,11 @@
   padding: 1rem 0;
 }
 .header-faq h1 {
-  font-size: 2rem;
+  font-size: 140%;
   margin: 0;
 }
 .header-faq p {
-  font-size: 1rem;
+  font-size: 100%;
   margin: 0;
 }
 .content-faq {
@@ -30,6 +30,10 @@
   flex-direction: column;
   height: 58vh;
   padding: 20px;
+}
+.content-faq h2 {
+  font-size: 120%;
+  margin: 0;
 }
 .faq-list {
   display: flex;

@@ -52,7 +52,13 @@ const DropDown: React.FC<FAQItemProps> = ({ question, answer, hasButton, url }) 
           height: '-webkit-fill-available',
           padding: '0 1em'
         }}>
-          <h3>{question}</h3>
+          <h3
+            style={{
+              margin: 0,
+              fontSize: '100%',
+              fontWeight: 'bold'
+            }}
+          >{question}</h3>
         </div>
         <div 
         className='faq-question-icon'
@@ -78,7 +84,13 @@ const DropDown: React.FC<FAQItemProps> = ({ question, answer, hasButton, url }) 
           backgroundColor: '#f9f9f9',
           borderTop: '1px solid #ccc'
         }}>
-          <p>{answer}</p>
+          <p
+            style={{
+              margin: 0,
+              fontSize: '100%',
+              fontWeight: 'normal'
+            }}
+          >{answer}</p>
           {hasButton && (
             <button 
               className="delete-account-btn" 
@@ -90,7 +102,7 @@ const DropDown: React.FC<FAQItemProps> = ({ question, answer, hasButton, url }) 
                 borderRadius: '5px',
                 border: 'none',
                 cursor: 'pointer',
-                width: '30%',
+                width: '100%',
                 fontWeight: 'bold',
                 fontSize: '1em',
               }}>
