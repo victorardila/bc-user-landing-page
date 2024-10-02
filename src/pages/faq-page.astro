@@ -1,5 +1,4 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import DropDown from "../components/drop-down.tsx";
 import "../styles/faq-page.styles.css"; // Importa el archivo CSS aquí
 import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
@@ -39,32 +38,29 @@ const faqData = [
 ];
 ---
 
-<Layout title="Preguntas Frecuentes - BeatConnect">
-  <main class="container-faq-page">
-    <header class="header-faq">
-      <img src={logo.src} alt="BeatConnect" style="width: 8em; height: 8em;" />
-      <h1>Preguntas Frecuentes</h1>
-      <p>
-        Encuentra respuestas a las preguntas más comunes sobre nuestra
-        aplicación.
-      </p>
-    </header>
+<div class="container-faq-page">
+  <header class="header-faq">
+    <img src={logo.src} alt="BeatConnect" style="width: 8em; height: 8em;" />
+    <h1>Preguntas Frecuentes</h1>
+    <p>
+      Encuentra respuestas a las preguntas más comunes sobre nuestra aplicación.
+    </p>
+  </header>
 
-    <section class="content-faq">
-      <h2>Lista de preguntas</h2>
-      <div class="faq-list">
-        {
-          faqData.map((item, index) => (
-            <DropDown
-              client:load
-              question={item.question}
-              answer={item.answer}
-              hasButton={item.hasButton}
-              url={item.url}
-            />
-          ))
-        }
-      </div>
-    </section>
-  </main>
-</Layout>
+  <section class="content-faq">
+    <h2>Lista de preguntas</h2>
+    <div class="faq-list">
+      {
+        faqData.map((item, index) => (
+          <DropDown
+            client:load
+            question={item.question}
+            answer={item.answer}
+            hasButton={item.hasButton}
+            url={item.url}
+          />
+        ))
+      }
+    </div>
+  </section>
+</div>

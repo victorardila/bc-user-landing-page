@@ -1,48 +1,6 @@
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
-  overflow: hidden; /* Para evitar que el pseudo-elemento se salga del body */
-}
-
-body::before {
-  content: ""; /* Necesario para que el pseudo-elemento se muestre */
-  position: absolute; /* Posicionamiento absoluto */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../assets/img/design.png");
-  background-size: 15% auto;
-  background-position: center;
-  background-repeat: repeat;
-  background-color: #3d9df2; /* Color de fondo por defecto */
-  filter: blur(4px); /* Aplica el blur solo a la imagen de fondo */
-  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del body */
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-footer p {
-  display: flex;
-  margin: 0;
-}
 .container-pages {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }

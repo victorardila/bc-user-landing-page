@@ -1,47 +1,16 @@
 ---
-// Tu archivo raíz
 import FaqPage from "./faq-page.astro";
-import ErrorPage from "./404-page.astro";
-import DeleteAccountPage from "./delete-account.astro";
-import svgLogo from "../assets/svg/logo_blank.svg";
-import "../styles/index.styles.css"; // Asegúrate de que este archivo tenga estilos globales.
+import "../styles/index.styles.css";
+import LayoutApp from "../layouts/LayoutApp.astro";
 
-// Define las rutas estáticas
-export function getStaticPaths() {
-  return [
-    { params: { path: ["faq"] } },
-    { params: { path: ["404"] } },
-    { params: { path: ["delete-account"] } },
-    { params: { path: undefined } }, // Página por defecto (faq)
-  ];
-}
-
-// Captura el parámetro de la URL
-const { path } = Astro.params;
-// Determinar la página actual basada en el parámetro de URL
-let currentPage = path ? path[0] : "faq"; // Si no hay path, usa "faq"
 // Función para obtener el año actual
 export function getYear() {
   return new Date().getFullYear();
 }
 ---
 
-<div class="container-pages">
-  <!-- Renderiza FaqPage si path está vacío o indefinido -->
-  {currentPage === "faq" && <FaqPage />}
-  <!-- Renderiza ErrorPage si path es "404" -->
-  {currentPage === "404" && <ErrorPage />}
-  <!-- Renderiza DeleteAccountPage si path es "delete-account" -->
-  {currentPage === "delete-account" && <DeleteAccountPage />}
-  <footer>
-    <p>
-      &copy; {getYear()}
-      <img
-        src={svgLogo.src}
-        alt="BeatConnect"
-        style="width: 1.5em; height: 1.5em; margin: 0 10px;"
-      />
-      BeatConnect. Todos los derechos reservados.
-    </p>
-  </footer>
-</div>
+<LayoutApp title="BeatConnet App - Preguntas frecuentes">
+  <div class="container-pages">
+    <FaqPage />
+  </div>
+</LayoutApp>
