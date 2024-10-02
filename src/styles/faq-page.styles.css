@@ -8,6 +8,7 @@
 }
 
 .header-faq {
+  position: relative; /* Necesario para que los botones se posicionen en relación al header */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,10 +18,12 @@
   text-align: center;
   padding: 1rem 0;
 }
+
 .header-faq h1 {
   font-size: 140%;
   margin: 0;
 }
+
 .header-faq p {
   font-size: 100%;
   margin: 0;
@@ -28,12 +31,30 @@
 .content-faq {
   display: flex;
   flex-direction: column;
-  height: 58vh;
+  height: calc(
+    70vh - 50px
+  ); /* Ajusta 50px al tamaño de la ventana del navegador */
   padding: 20px;
 }
+
 .content-faq h2 {
   font-size: 120%;
   margin: 0;
+}
+.faq-header {
+  display: flex;
+  justify-content: space-between; /* Alinea el contenido en ambos extremos */
+  align-items: center; /* Alinea verticalmente */
+  margin-bottom: 1em; /* Espacio debajo del encabezado */
+}
+
+.faq-title {
+  font-size: 2em; /* Tamaño del texto del título */
+}
+
+.item-count {
+  font-size: 1.2em; /* Tamaño del texto del contador */
+  color: gray; /* Color opcional para el contador */
 }
 .faq-list {
   display: flex;
@@ -45,16 +66,16 @@
   padding: 10px;
 }
 
-/* Personalizar el scrollbar (solo para navegadores basados en WebKit como Chrome y Safari) */
+/* Personalizar el scrollbar */
 .faq-list::-webkit-scrollbar {
-  width: 8px; /* Ancho del scrollbar */
+  width: 8px;
 }
 
 .faq-list::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color de la barra */
-  border-radius: 10px; /* Redondear el scrollbar */
+  background-color: #888;
+  border-radius: 10px;
 }
 
 .faq-list::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color al pasar el cursor sobre el scrollbar */
+  background-color: #555;
 }
