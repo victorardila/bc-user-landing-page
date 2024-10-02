@@ -32,7 +32,10 @@ const handleSearch = (searchTerm: string) => {
 
   <section class="content-faq">
     <div class="faq-header">
-      <h2 class="faq-title">Lista de preguntas</h2>
+      <h2 class="faq-title">
+        Lista de preguntas
+        <span>(Filtra para buscar algo en especifico)</span>
+      </h2>
       <span class="item-count">{FAQData.faqs.length} Preguntas</span>
     </div>
     <SearchBar client:load onSearch={handleSearch} />

@@ -41,6 +41,11 @@
   font-size: 120%;
   margin: 0;
 }
+.content-faq h2 span {
+  font-size: 80%;
+  font-weight: normal;
+  margin: 0;
+}
 .faq-header {
   display: flex;
   justify-content: space-between; /* Alinea el contenido en ambos extremos */
