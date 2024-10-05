@@ -16,6 +16,9 @@ const FaqsContainerListIsland = () => {
 
   const handleSearch = (term) => {
     setSearchTerm(term); // Actualiza el término de búsqueda
+    if (term === "") {
+      setSelectedSection([]); // Limpia la sección seleccionada al borrar el término de búsqueda
+    }
   };
 
   // Filtra las preguntas según el término de búsqueda
@@ -55,14 +58,23 @@ const FaqsContainerListIsland = () => {
           ? descriptionObject.description
           : "Descripción no disponible.",
       ]);
+    } else {
+      setSelectedSection([]); // Limpia la sección seleccionada si el botón no está seleccionado
     }
   }, [selectedButton, sections]); // Añade sections como dependencia
 
   // Determina si se deben mostrar los dropdowns según la lógica de filtrado
   const shouldShowDefinitionSection =
     selectedButton !== null &&
-    searchTerm === "" &&
-    filteredFaqsSection.length > 0;
+    filteredFaqsSection.length > 0 &&
+    searchTerm === "";
+
+  // Obtener las FAQs a mostrar
+  const faqsToShow = searchTerm
+    ? filteredFaqsSearched
+    : selectedButton
+      ? filteredFaqsSection
+      : dataFaqs; // Muestra todas las FAQs si no hay filtro de búsqueda ni sección seleccionada
 
   return (
     <div
@@ -85,8 +97,7 @@ const FaqsContainerListIsland = () => {
       >
         <SearchBar onSearch={handleSearch} />{" "}
         <span>
-          {searchTerm ? filteredFaqsSearched.length : FAQData.faqs.length}{" "}
-          Preguntas
+          {searchTerm ? filteredFaqsSearched.length : dataFaqs.length} Preguntas
         </span>
       </div>
       <div
@@ -135,25 +146,15 @@ const FaqsContainerListIsland = () => {
             overflowY: "auto",
           }}
         >
-          {searchTerm
-            ? filteredFaqsSearched.map((item, index) => (
-                <DropDown
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                  hasButton={item.hasButton}
-                  url={item.url}
-                />
-              ))
-            : filteredFaqsSection.map((item, index) => (
-                <DropDown
-                  key={index}
-                  question={item.question}
-                  answer={item.answer}
-                  hasButton={item.hasButton}
-                  url={item.url}
-                />
-              ))}
+          {faqsToShow.map((item, index) => (
+            <DropDown
+              key={index}
+              question={item.question}
+              answer={item.answer}
+              hasButton={item.hasButton}
+              url={item.url}
+            />
+          ))}
         </div>
       </div>
     </div>
