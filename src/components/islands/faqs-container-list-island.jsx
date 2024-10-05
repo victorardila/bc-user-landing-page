@@ -11,6 +11,11 @@ const FaqsContainerListIsland = () => {
     setSearchTerm(term); // Actualiza el término de búsqueda
   };
 
+  // Filtra las preguntas según el término de búsqueda
+  const filteredFaqs = dataFaqs.filter((item) =>
+    item.question.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div
       className="container"
@@ -32,7 +37,9 @@ const FaqsContainerListIsland = () => {
       >
         <SearchBar onSearch={handleSearch} />{" "}
         {/* Pasa la función handleSearch */}
-        <span>{FAQData.faqs.length} Preguntas</span>
+        <span>
+          {searchTerm ? filteredFaqs.length : FAQData.faqs.length} Preguntas
+        </span>
       </div>
       <div
         className="container-content-faqs scrollable"
@@ -45,19 +52,15 @@ const FaqsContainerListIsland = () => {
           overflowY: "auto",
         }}
       >
-        {dataFaqs
-          .filter((item) =>
-            item.question.toLowerCase().includes(searchTerm.toLowerCase())
-          ) // Filtra las preguntas según el término de búsqueda
-          .map((item, index) => (
-            <DropDown
-              key={index} // Agrega una clave única aquí
-              question={item.question}
-              answer={item.answer}
-              hasButton={item.hasButton}
-              url={item.url}
-            />
-          ))}
+        {filteredFaqs.map((item, index) => (
+          <DropDown
+            key={index} // Agrega una clave única aquí
+            question={item.question}
+            answer={item.answer}
+            hasButton={item.hasButton}
+            url={item.url}
+          />
+        ))}
       </div>
     </div>
   );
