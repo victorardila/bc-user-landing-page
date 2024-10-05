@@ -1,4 +1,4 @@
-.container-delete-account {
+.container-delete-user-data {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   border-radius: 20px;
 }
 
-.header-delete-account {
+.header-delete-user-data {
   position: relative;
   border-radius: 20px;
   display: flex;
@@ -29,7 +29,7 @@
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   overflow: hidden;
 }
 .header-bg {
@@ -69,20 +69,24 @@
   width: 80%;
 }
 
-.delete-account-form {
+.delete-user-data-form {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  height: 40vh;
+  width: -webkit-fill-available;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.delete-account-form h2 {
+.delete-user-data-form h2 {
   color: #000;
 }
-.delete-account-form p {
+.delete-user-data-form p {
   margin: 0;
   font-size: 1.2rem;
 }
-.form-delete-account {
+.form-delete-user-data {
   display: flex;
   flex-direction: column;
 }
@@ -105,13 +109,13 @@
   font-size: 18px;
   font-weight: bold;
 }
-.form-delete-account {
+.form-delete-user-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-delete-account input {
+.form-delete-user-data input {
   width: -webkit-fill-available;
   padding: 10px;
   margin-top: 5px;
@@ -120,7 +124,7 @@
   border: 1px solid #ddd;
 }
 
-.form-delete-account textarea {
+.form-delete-user-data textarea {
   width: -webkit-fill-available;
   padding: 10px;
   margin-top: 5px;
@@ -129,7 +133,7 @@
   border: 1px solid #ddd;
 }
 
-.form-delete-account button {
+.form-delete-user-data button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,12 +148,12 @@
   max-width: 50%;
   cursor: pointer;
 }
-.form-delete-account button svg {
+.form-delete-user-data button svg {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-.form-delete-account button:hover {
+.form-delete-user-data button:hover {
   background-color: #218838;
 }
 .contact {
@@ -165,4 +169,28 @@
 .contact p {
   font-size: 20px;
   margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
 }

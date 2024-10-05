@@ -335,22 +335,19 @@
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo cambiar mi contraseña?",
             "answer": "Para cambiar tu contraseña, ve a la sección de Configuración de Cuenta, selecciona Cambiar Contraseña y sigue las instrucciones para establecer una nueva contraseña.",
-            "hasButton": true,
-            "url": "/settings/change-password"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Qué debo hacer si olvido mi contraseña?",
             "answer": "Si olvidas tu contraseña, puedes restablecerla haciendo clic en 'Olvidé mi contraseña' en la página de inicio de sesión y siguiendo los pasos para recibir un enlace de restablecimiento.",
-            "hasButton": true,
-            "url": "/forgot-password"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo actualizar mi dirección de correo electrónico?",
             "answer": "Para actualizar tu dirección de correo electrónico, dirígete a la sección de Configuración de Cuenta, selecciona Cambiar Correo Electrónico y sigue los pasos indicados.",
-            "hasButton": true,
-            "url": "/settings/change-email"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
@@ -362,50 +359,44 @@
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo gestionar las notificaciones que recibo?",
             "answer": "Puedes gestionar las notificaciones desde la sección de Configuración de Notificaciones en tu cuenta, donde puedes personalizar qué tipo de alertas deseas recibir.",
-            "hasButton": true,
-            "url": "/settings/notifications"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo proteger mi cuenta?",
             "answer": "Para proteger tu cuenta, te recomendamos activar la autenticación de dos factores (2FA) en la sección de Seguridad de tu cuenta y elegir una contraseña fuerte que no reutilices en otros servicios.",
-            "hasButton": true,
-            "url": "/settings/security"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Puedo vincular mi cuenta con redes sociales?",
-            "answer": "Sí, puedes vincular tu cuenta con servicios de redes sociales como Facebook o Google en la sección de Configuración de Cuenta. Esto te permitirá iniciar sesión más fácilmente.",
-            "hasButton": true,
-            "url": "/settings/social-login"
+            "answer": "Sí, puedes vincular tu cuenta con servicios de redes sociales como Spotify o Google en la sección de Configuración de Cuenta. Esto te permitirá iniciar sesión más fácilmente.",
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo desactivar el inicio de sesión social?",
             "answer": "Para desactivar el inicio de sesión social, ve a la sección de Configuración de Cuenta, selecciona las opciones de redes sociales vinculadas y sigue las instrucciones para desvincularlas.",
-            "hasButton": true,
-            "url": "/settings/social-login"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Cómo puedo verificar mi cuenta?",
             "answer": "Después de registrarte, recibirás un correo electrónico de verificación. Haz clic en el enlace proporcionado para verificar tu cuenta. Si no recibes el correo, revisa tu carpeta de spam o contáctanos.",
-            "hasButton": true,
-            "url": "/resend-verification"
+            "hasButton": false
         },
         {
             "section": "gestion de cuenta",
             "question": "¿Qué debo hacer si mi cuenta ha sido comprometida?",
             "answer": "Si crees que tu cuenta ha sido comprometida, te recomendamos cambiar tu contraseña de inmediato y habilitar la autenticación de dos factores (2FA). Si sigues teniendo problemas, contacta a soporte.",
-            "hasButton": true,
-            "url": "/support/security-issue"
+            "hasButton": false
         },
         {
             "section": "gestion de datos del usuario",
             "question": "¿Cómo puedo eliminar mis datos personales de BeatConnect?",
             "answer": "Para eliminar los datos relacionados con tu cuenta sin eliminar la cuenta en sí, ve a la sección 'Gestión de Datos' en la configuración de la aplicación. Desde allí, puedes solicitar la eliminación de tu historial de actividad, preferencias musicales y otros datos personales almacenados.",
             "hasButton": true,
-            "url": "/settings/data-management"
+            "url": "/delete-user-data"
         },
         {
             "section": "gestion de datos del usuario",
@@ -429,15 +420,13 @@
             "section": "gestion de datos del usuario",
             "question": "¿Cómo puedo revisar los datos almacenados en mi cuenta de BeatConnect?",
             "answer": "Puedes revisar todos los datos almacenados en tu cuenta y descargarlos desde la sección de 'Privacidad y Datos' en la configuración de la aplicación. Esta sección te permite ver el tipo de información que has compartido y almacenado.",
-            "hasButton": true,
-            "url": "/settings/privacy"
+            "hasButton": false
         },
         {
             "section": "gestion de datos del usuario",
             "question": "¿Qué debo hacer si quiero eliminar todos mis datos y mi cuenta?",
             "answer": "Si deseas eliminar todos tus datos y tu cuenta, debes ir a la sección 'Eliminar Cuenta'. Este proceso borrará permanentemente toda la información almacenada, incluyendo tus datos personales y tu perfil.",
-            "hasButton": true,
-            "url": "/delete-account"
+            "hasButton": false
         }
     ]
 }

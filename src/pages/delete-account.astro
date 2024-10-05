@@ -78,8 +78,27 @@ const handleDeleteAccount = async () => {
             >
           </div>
           <textarea id="reason" name="reason" rows="4" required></textarea>
-          <Button type="submit" onClick={handleDeleteAccount}>
-            <FontAwesomeIcon icon={faTrash} />
+          <Button
+            type="submit"
+            onClick={handleDeleteAccount}
+            style={{
+              background: "#e74c3c",
+              width: "100%",
+              padding: "10px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              color: "#fff",
+              border: "none",
+              borderRadius: "5px",
+              maxWidth: "60%",
+              maxHeight: "50px",
+              cursor: "pointer",
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faTrash}
+              style={{ height: "20px", width: "20px" }}
+            />
             Solicitar eliminación de cuenta
           </Button>
         </form>

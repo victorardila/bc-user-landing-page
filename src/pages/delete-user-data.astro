@@ -1,7 +1,7 @@
 ---
-import "../styles/delete-account.styles.css"; // Asegúrate de que este archivo tenga estilos específicos
+import "../styles/delete-user-data.styles.css"; // Asegúrate de que este archivo tenga estilos específicos
 import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
-import exampleForUser from "../assets/img/example-to-users.png"; // Importa el archivo PNG aquí
+import explainForUser from "../assets/img/explain-to-users.png"; // Importa el archivo PNG aquí
 import {
   faTrash,
   faUser,
@@ -38,50 +38,90 @@ const handleDeleteAccount = async () => {
 };
 ---
 
-<LayoutApp title="BeatConnect App - Eliminación de cuenta">
-  <div class="container-delete-account">
+<LayoutApp title="BeatConnect App - Eliminación de datos">
+  <div class="container-delete-user-data">
     <div class="content">
-      <header class="header-delete-account">
+      <header class="header-delete-user-data">
         <div
           class="header-bg"
-          style={`background-image: url(${exampleForUser.src});`}
+          style={`background-image: url(${explainForUser.src});`}
         >
         </div>
 
         <div class="header-content">
           <img src={logo.src} alt="BeatConnect" />
-          <h1>Eliminación de Cuenta</h1>
+          <h1>Eliminación de datos vinculados a la cuenta</h1>
           <p>
-            Si deseas eliminar tu cuenta o solicitar la eliminación de tus datos
-            de nuestra aplicación, por favor sigue los pasos a continuación.
+            Si deseas eliminar los datos asociados a tu cuenta, puedes hacerlo a
+            través del siguiente formulario.
           </p>
         </div>
       </header>
-
-      <section class="delete-account-form">
-        <h2>Solicitud de eliminación de cuenta</h2>
-        <p>
-          Para solicitar la eliminación de tu cuenta, por favor completa el
-          formulario a continuación.
-        </p>
-        <form class="form-delete-account">
-          <div class="info-label">
-            <FontAwesomeIcon icon={faUser} />
-            <label for="email">Correo electrónico asociado a la cuenta:</label>
+      <section class="delete-user-data-form">
+        <form
+          id="delete-account-form"
+          onsubmit="handleDeleteAccount(); return false;"
+        >
+          <div class="form-group">
+            <label for="full-name">Nombre Completo:</label>
+            <input type="text" id="full-name" name="full-name" required />
           </div>
-          <input type="email" id="email" name="email" required />
 
-          <div class="info-label">
-            <FontAwesomeIcon icon={faEnvelopeOpenText} />
-            <label for="reason"
-              >Razón para la eliminación (Personalice su respuesta aquí):</label
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="username">ID de Usuario o Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Motivo de la Eliminación (opcional):</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+          </div>
+
+          <div class="form-group consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent"
+              >Confirmo que entiendo que, al eliminar mis datos, perderé el
+              acceso a mi cuenta.</label
             >
           </div>
-          <textarea id="reason" name="reason" rows="4" required></textarea>
-          <Button type="submit" onClick={handleDeleteAccount}>
-            <FontAwesomeIcon icon={faTrash} />
-            Solicitar eliminación de cuenta
-          </Button>
+          <div
+            class="form-group"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "10px",
+            }}
+          >
+            <Button
+              type="submit"
+              onClick={handleDeleteAccount}
+              style={{
+                background: "#e74c3c",
+                width: "100%",
+                padding: "10px",
+                fontSize: "18px",
+                fontWeight: "bold",
+                color: "#fff",
+                border: "none",
+                borderRadius: "5px",
+                maxWidth: "60%",
+                maxHeight: "50px",
+                cursor: "pointer",
+              }}
+            >
+              <FontAwesomeIcon
+                icon={faTrash}
+                style={{ height: "20px", width: "20px" }}
+              />
+              Solicitar eliminación de datos asociados
+            </Button>
+          </div>
         </form>
       </section>
 
