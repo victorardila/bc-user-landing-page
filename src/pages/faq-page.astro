@@ -1,18 +1,8 @@
 ---
-import DropDown from "../components/common/drop-down.tsx";
-import SearchBar from "../components/common/search-bar.tsx";
 import "../styles/faq-page.styles.css"; // Importa el archivo CSS aquí
 import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
-import FAQData from "../assets/json/SeccionesFaq.json";
 import MenuButtonIsland from "../components/islands/menu-button-island.jsx";
-let filteredFAQs = FAQData.faqs;
-// Define el tipo del parámetro como 'string'
-const handleSearch = (searchTerm: string) => {
-  console.log("esta escribiendo");
-  filteredFAQs = FAQData.faqs.filter((item) =>
-    item.question.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-};
+import FaqsContainerListIsland from "../components/islands/faqs-container-list-island.jsx";
 ---
 
 <div class="container-faq-page">
@@ -36,22 +26,10 @@ const handleSearch = (searchTerm: string) => {
         Lista de preguntas
         <span>(Filtra para buscar algo en especifico)</span>
       </h2>
-      <span class="item-count">{FAQData.faqs.length} Preguntas</span>
     </div>
-    <SearchBar client:load onSearch={handleSearch} />
     <!-- Incluye el componente de búsqueda aquí -->
     <div class="faq-list">
-      {
-        filteredFAQs.map((item, index) => (
-          <DropDown
-            client:load
-            question={item.question}
-            answer={item.answer}
-            hasButton={item.hasButton}
-            url={item.url}
-          />
-        ))
-      }
+      <FaqsContainerListIsland client:load />
     </div>
   </section>
 </div>

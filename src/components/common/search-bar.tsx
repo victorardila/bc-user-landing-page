@@ -10,16 +10,18 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [isActive, setIsActive] = useState<boolean>(false);
 
-  const handleSearch = () => {
-    onSearch(searchTerm);
-    setSearchTerm(""); // Opcional: limpiar el campo de búsqueda después de la búsqueda
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    onSearch(value); // Llama a onSearch inmediatamente cuando se escribe
   };
 
   return (
     <div
+      className="search-bar-container"
       style={{
         display: "flex",
-        alignItems: "center", // Centra verticalmente
+        alignItems: "center",
         justifyContent: "start",
         height: "30px",
       }}
@@ -47,13 +49,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         <input
           type="text"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={handleInputChange} // Cambiado para manejar el cambio de entrada
           onBlur={() => setIsActive(false)} // Oculta el input al perder foco
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              handleSearch(); // Ejecuta la búsqueda al presionar Enter
-            }
-          }}
           placeholder="Buscar preguntas..."
           style={{
             height: "-webkit-fill-available",
