@@ -1,0 +1,98 @@
+---
+import "../styles/delete-account.styles.css"; // Asegúrate de que este archivo tenga estilos específicos
+import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
+import exampleForUser from "../assets/img/example-to-users.png"; // Importa el archivo PNG aquí
+import {
+  faTrash,
+  faUser,
+  faEnvelopeOpenText,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LayoutApp from "../layouts/LayoutApp.astro";
+import Button from "../components/common/button.tsx";
+import { auth } from "../api/firebase.ts"; // Importa el objeto de autenticación
+import { deleteUser } from "firebase/auth";
+
+const handleDeleteAccount = async () => {
+  const user = auth.currentUser;
+
+  if (user) {
+    const confirmation = confirm(
+      "¿Estás seguro de que deseas eliminar tu cuenta? Esta acción es irreversible."
+    );
+
+    if (confirmation) {
+      try {
+        await deleteUser(user);
+        alert("Tu cuenta ha sido eliminada exitosamente.");
+      } catch (error) {
+        console.error("Error al eliminar la cuenta:", error);
+        alert(
+          "Hubo un error al eliminar tu cuenta. Por favor, intenta de nuevo."
+        );
+      }
+    }
+  } else {
+    alert("No hay un usuario autenticado.");
+  }
+};
+---
+
+<LayoutApp title="BeatConnect App - Eliminación de cuenta">
+  <div class="container-delete-account">
+    <div class="content">
+      <header class="header-delete-account">
+        <div
+          class="header-bg"
+          style={`background-image: url(${exampleForUser.src});`}
+        >
+        </div>
+
+        <div class="header-content">
+          <img src={logo.src} alt="BeatConnect" />
+          <h1>Eliminación de Cuenta</h1>
+          <p>
+            Si deseas eliminar tu cuenta o solicitar la eliminación de tus datos
+            de nuestra aplicación, por favor sigue los pasos a continuación.
+          </p>
+        </div>
+      </header>
+
+      <section class="delete-account-form">
+        <h2>Solicitud de eliminación de cuenta</h2>
+        <p>
+          Para solicitar la eliminación de tu cuenta, por favor completa el
+          formulario a continuación.
+        </p>
+        <form class="form-delete-account">
+          <div class="info-label">
+            <FontAwesomeIcon icon={faUser} />
+            <label for="email">Correo electrónico asociado a la cuenta:</label>
+          </div>
+          <input type="email" id="email" name="email" required />
+
+          <div class="info-label">
+            <FontAwesomeIcon icon={faEnvelopeOpenText} />
+            <label for="reason"
+              >Razón para la eliminación (Personalice su respuesta aquí):</label
+            >
+          </div>
+          <textarea id="reason" name="reason" rows="4" required></textarea>
+          <Button type="submit" onClick={handleDeleteAccount}>
+            <FontAwesomeIcon icon={faTrash} />
+            Solicitar eliminación de cuenta
+          </Button>
+        </form>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>¿Necesitas ayuda?</h2>
+        <p>
+          Si tienes alguna pregunta o necesitas asistencia adicional, puedes
+          contactarnos en:
+        </p>
+        <p><a href="mailto:soporte@tudominio.com">beatconnet@gmail.com</a></p>
+      </section>
+    </div>
+  </div>
+</LayoutApp>

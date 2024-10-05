@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import DropDown from "../common/drop-down";
 import SearchBar from "../common/search-bar";
 import FAQData from "../../assets/json/SeccionesFaq.json";
+import { useButtonMenu } from "../../hooks/useButtonMenu";
 
 const FaqsContainerListIsland = () => {
   const dataFaqs = FAQData.faqs;
   const [searchTerm, setSearchTerm] = useState(""); // Agregado para el término de búsqueda
+
+  // Usa el hook de Zustand para obtener el estado del botón
+  const { selectedButton, setSelectedButton } = useButtonMenu();
 
   const handleSearch = (term) => {
     setSearchTerm(term); // Actualiza el término de búsqueda

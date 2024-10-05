@@ -1,11 +1,13 @@
 {
     "faqs": [
         {
+            "section": "general",
             "question": "¿Qué es BeatConnect?",
             "answer": "BeatConnect es una innovadora plataforma de redes sociales musicales diseñada para conectar a amantes de la música con establecimientos y eventos en vivo. Nuestra aplicación móvil permite a los usuarios descubrir nuevas canciones, explorar el historial de música escuchada por sus amigos, interactuar con amigos, seguir a sus artistas favoritos y encontrar los mejores lugares para disfrutar de la música en vivo. Ya sea que estés buscando el ambiente perfecto para bailar toda la noche o simplemente quieras descubrir nuevas melodías, BeatConnect es tu destino musical definitivo.",
             "hasButton": false
         },
         {
+            "section": "general",
             "question": "¿Qué es un Usuario en BeatConnect?",
             "answer": "Se refiere a cualquier persona que acceda o utilice nuestra aplicación, BeatConnect, ya sea como individuo o en representación de un establecimiento.",
             "hasButton": false
