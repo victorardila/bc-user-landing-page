@@ -13,250 +13,431 @@
             "hasButton": false
         },
         {
-            "question": "¿Qué se entiende por Establecimiento?",
-            "answer": "Se refiere a cualquier negocio, local o lugar que utilice BeatConnect para interactuar con sus clientes y promover eventos musicales.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué es Información Personal?",
-            "answer": "Se refiere a cualquier dato que identifique o pueda utilizarse para identificar a un individuo, incluidos, entre otros, nombres, direcciones de correo electrónico, números de teléfono y datos de ubicación.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué significa Servicio en el contexto de BeatConnect?",
-            "answer": "Hace referencia a nuestra aplicación móvil y plataforma web, BeatConnect, y sus subdominios asociados, incluidas todas sus funcionalidades y características.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué es la Política de Privacidad?",
-            "answer": "Se refiere al documento que establece cómo BeatConnect recopila, utiliza, almacena y divulga la información personal de los usuarios.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué son los Términos de Servicio?",
-            "answer": "Hace referencia al conjunto de reglas y condiciones que rigen el uso de BeatConnect por parte de los usuarios, incluidos sus derechos y responsabilidades.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué significa Consentimiento?",
-            "answer": "Se refiere al permiso explícito dado por un usuario para que BeatConnect recopile, utilice y divulgue su información personal de acuerdo con la Política de Privacidad y los Términos de Servicio.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué son los Datos de Ubicación?",
-            "answer": "Son los datos que indican la ubicación física de un usuario, que pueden ser recopilados por BeatConnect si el usuario da su consentimiento.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué son Cookies?",
-            "answer": "Son pequeños archivos de datos que se almacenan en el dispositivo del usuario y se utilizan para rastrear la actividad del usuario en BeatConnect, mejorar la experiencia del usuario y personalizar el contenido.",
-            "hasButton": false
-        },
-        {
-            "question": "¿Qué es la Seguridad de la Información?",
-            "answer": "Hace referencia a las medidas y prácticas implementadas por BeatConnect para proteger la información personal de los usuarios contra accesos no autorizados, divulgación, alteración o destrucción.",
-            "hasButton": false
-        },
-        {
+            "section": "general",
             "question": "¿Qué es la Plataforma?",
-            "answer": "Se refiere al sitio web, la aplicación web o la aplicación móvil de BeatConnect accesible para el público.",
+            "answer": "Se refiere una aplicacion móvil de BeatConnect accesible para el público, donde estara todo el contenido de la aplicación.",
             "hasButton": false
         },
         {
+            "section": "general",
             "question": "¿Qué se entiende por Cliente en BeatConnect?",
             "answer": "Se refiere a la empresa, establecimiento comercial o persona que se registra para utilizar el servicio de BeatConnect con el fin de gestionar las relaciones con sus consumidores o usuarios del servicio.",
             "hasButton": false
         },
         {
+            "section": "general",
+            "question": "¿Qué se entiende por Establecimiento?",
+            "answer": "Se refiere a cualquier negocio, local o lugar que utilice BeatConnect para interactuar con sus clientes y promover eventos musicales.",
+            "hasButton": false
+        },
+        {
+            "section": "general",
+            "question": "¿Qué es Información Personal?",
+            "answer": "Se refiere a cualquier dato que identifique o pueda utilizarse para identificar a un individuo, incluidos, entre otros, nombres, direcciones de correo electrónico, números de teléfono y datos de ubicación.",
+            "hasButton": false
+        },
+        {
+            "section": "general",
+            "question": "¿Qué significa Servicio en el contexto de BeatConnect?",
+            "answer": "Hace referencia a nuestra aplicación móvil y plataforma web, BeatConnect, y sus subdominios asociados, incluidas todas sus funcionalidades y características.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué es la Política de Privacidad?",
+            "answer": "Se refiere al documento que establece cómo BeatConnect recopila, utiliza, almacena y divulga la información personal de los usuarios.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué son los Términos de Servicio?",
+            "answer": "Hace referencia al conjunto de reglas y condiciones que rigen el uso de BeatConnect por parte de los usuarios, incluidos sus derechos y responsabilidades.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué significa Consentimiento?",
+            "answer": "Se refiere al permiso explícito dado por un usuario para que BeatConnect recopile, utilice y divulgue su información personal de acuerdo con la Política de Privacidad y los Términos de Servicio.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué son los Datos de Ubicación?",
+            "answer": "Son los datos que indican la ubicación física de un usuario, que pueden ser recopilados por BeatConnect si el usuario da su consentimiento.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué son Cookies?",
+            "answer": "Son pequeños archivos de datos que se almacenan en el dispositivo del usuario y se utilizan para rastrear la actividad del usuario en BeatConnect, mejorar la experiencia del usuario y personalizar el contenido.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
+            "question": "¿Qué es la Seguridad de la Información?",
+            "answer": "Hace referencia a las medidas y prácticas implementadas por BeatConnect para proteger la información personal de los usuarios contra accesos no autorizados, divulgación, alteración o destrucción.",
+            "hasButton": false
+        },
+        {
+            "section": "politica y privacidad",
             "question": "¿Qué tipo de información recopilamos?",
             "answer": "Recopilamos varios tipos de información, incluyendo información de registro, información de ubicación y categoría, información de perfil, información de interacción, información del dispositivo y datos de ubicación.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Cómo usamos la información que recopilamos?",
             "answer": "Utilizamos la información para personalizar el servicio, mejorar la experiencia, comunicarnos con los usuarios y proporcionar funcionalidades específicas, como la búsqueda de establecimientos cercanos.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Cuándo usa BeatConnect la información de usuario final de tercero?",
             "answer": "BeatConnect recopilará los datos del usuario final necesarios para brindar los servicios a nuestros clientes, y los usuarios finales pueden proporcionar información de sus redes sociales.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Compartimos información que recopilamos con terceros?",
             "answer": "Sí, compartimos la información que recopilamos con terceros en las siguientes circunstancias:\n\n1. Proveedores de servicios: Podemos compartir información con proveedores de servicios externos que nos ayudan a ofrecer y mejorar nuestros servicios. Estos proveedores están sujetos a obligaciones de confidencialidad y solo pueden utilizar la información en la medida necesaria para proporcionar los servicios contratados.\n\n2. Cumplimiento legal: En algunos casos, podemos divulgar información cuando creemos de buena fe que es necesario para cumplir con la ley, proteger nuestros derechos legales o responder a solicitudes de autoridades gubernamentales.\n\n3. Transacciones comerciales: En caso de una fusión, adquisición o venta de activos, podemos transferir información como parte de la transacción. En tales casos, nos aseguraremos de que se respeten los compromisos de privacidad con respecto a la información personal.\n\n4. Colaboradores y socios: En algunos casos, podemos colaborar con otras empresas o socios para ofrecer servicios conjuntos o promociones. En tales casos, compartiremos información únicamente con su consentimiento y de acuerdo con nuestras políticas de privacidad.\n\n5. Anunciantes y socios de marketing: Podemos compartir información con anunciantes y socios de marketing para ofrecer publicidad relevante y personalizada a nuestros usuarios. Sin embargo, nunca compartiremos información personal identificable sin su consentimiento expreso.\n\n6. Otros usuarios de BeatConnect: En la medida en que usted elija compartir información en nuestra plataforma, esta estará disponible para otros usuarios de BeatConnect de acuerdo con la configuración de privacidad que haya seleccionado.\n\nEs importante destacar que no vendemos, alquilamos ni compartimos información personal identificable con fines comerciales o de marketing sin su consentimiento explícito.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Dónde y cuándo se recopila la información de los clientes y usuarios finales?",
             "answer": "La información de los clientes y usuarios finales se recopila en diferentes momentos y lugares durante su interacción con BeatConnect:\n\n1. Registro: Al registrarse en BeatConnect como usuario personal o como establecimiento, se recopila información básica como el nombre, la dirección de correo electrónico y la ubicación.\n\n2. Uso de la aplicación: Durante el uso de la aplicación, se recopila información sobre las interacciones del usuario, como las publicaciones que realiza, las búsquedas que realiza y las interacciones con otros usuarios.\n\n3. Visitas a establecimientos: Cuando un usuario visita un establecimiento que utiliza BeatConnect, se registra automáticamente la visita y se recopila información sobre la ubicación y el tiempo de permanencia.\n\n4. Compras y transacciones: Si un usuario realiza compras o transacciones a través de la aplicación, se recopila información relacionada con esas transacciones, como los productos comprados y el método de pago utilizado.\n\n5. Comunicaciones: Cuando un usuario se comunica con el equipo de soporte de BeatConnect o con otros usuarios a través de la aplicación, se recopila información sobre esas comunicaciones.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Cómo usamos su dirección de correo electrónico?",
             "answer": "Utilizamos la dirección de correo electrónico proporcionada por los usuarios de BeatConnect para varios propósitos, que incluyen:\n\n1. Verificación de la cuenta: Utilizamos la dirección de correo electrónico para verificar la identidad del usuario durante el proceso de registro y para garantizar la seguridad de la cuenta.\n\n2. Comunicaciones: Utilizamos la dirección de correo electrónico para enviar comunicaciones importantes relacionadas con la cuenta del usuario, como confirmaciones de registro, actualizaciones de la aplicación, notificaciones sobre eventos y promociones especiales.\n\n3. Soporte al cliente: Los usuarios pueden utilizar su dirección de correo electrónico para ponerse en contacto con nuestro equipo de soporte en caso de tener preguntas, problemas técnicos o cualquier otra consulta relacionada con la aplicación.\n\n4. Notificaciones: Podemos enviar notificaciones por correo electrónico sobre nuevas funciones, actualizaciones importantes o cambios en nuestras políticas y términos de servicio.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿La información recopilada a través de del servicio de BeatConnect es segura?",
             "answer": "Sí, la información recopilada a través del servicio de BeatConnect se mantiene segura y protegida. Implementamos medidas de seguridad sólidas para garantizar la confidencialidad, integridad y disponibilidad de los datos de nuestros usuarios. Utilizamos tecnologías de cifrado y seguimos las mejores prácticas de seguridad de la industria para proteger la información contra accesos no autorizados, uso indebido o divulgación. Además, regularmente realizamos auditorías y evaluaciones de seguridad para mantener nuestros sistemas actualizados y protegidos contra posibles amenazas. Su privacidad y seguridad son nuestra prioridad en BeatConnect.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Puedo actualizar o corregir mi información?",
             "answer": "Sí, puedes actualizar o corregir tu información en BeatConnect en cualquier momento. La plataforma te ofrece la opción de modificar tus datos personales, como tu nombre, dirección de correo electrónico, fecha de nacimiento y cualquier otra información que hayas proporcionado durante el registro. Simplemente accede a tu perfil en la aplicación o en el sitio web y encontrarás las herramientas necesarias para realizar los cambios que desees. Es importante mantener tu información actualizada para garantizar una experiencia óptima en BeatConnect.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Cuánto tiempo conservamos tu información?",
             "answer": "En BeatConnect, nos comprometemos a mantener la información de nuestros usuarios solo durante el tiempo necesario para cumplir con los fines para los cuales fue recopilada, a menos que se requiera o permita por ley un período de retención más prolongado. Esto significa que conservaremos tu información personal solo durante el tiempo que sea necesario para proporcionar nuestros servicios, cumplir con nuestras obligaciones legales y resolver disputas. Una vez que ya no necesitemos tu información para estos fines, la eliminaremos de manera segura. Nos esforzamos por ser transparentes sobre nuestros períodos de retención y tratamos de limitar la retención de datos tanto como sea posible para proteger tu privacidad y seguridad.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Cómo protegemos tu información?",
             "answer": "En BeatConnect, tomamos la seguridad de tu información muy en serio y nos comprometemos a protegerla contra el acceso no autorizado, la divulgación o el uso indebido. Utilizamos medidas técnicas, administrativas y físicas para garantizar la seguridad de tus datos personales y prevenir su pérdida, uso indebido, acceso no autorizado, divulgación, alteración o destrucción. Esto incluye el uso de encriptación para proteger la transmisión de datos confidenciales, la implementación de controles de acceso para restringir el acceso a la información solo a aquellos empleados que lo necesitan para cumplir con sus responsabilidades laborales, y la realización regular de evaluaciones de seguridad para identificar y abordar cualquier vulnerabilidad en nuestros sistemas. Además, nos comprometemos a mantenernos al tanto de las mejores prácticas en materia de seguridad de la información y a actualizar continuamente nuestras medidas de seguridad para proteger tu privacidad y confianza en nuestro servicio.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Ley Que Rige",
             "answer": "La legislación que rige la protección de datos personales puede variar según el país en el que opera BeatConnect y la ubicación de sus usuarios. En general, la recopilación, el almacenamiento y el procesamiento de datos personales están sujetos a leyes y regulaciones específicas, como el Reglamento General de Protección de Datos (RGPD) en la Unión Europea, la Ley de Privacidad del Consumidor de California (CCPA) en los Estados Unidos, y otras leyes de privacidad y protección de datos en diferentes jurisdicciones. BeatConnect se compromete a cumplir con todas las leyes y regulaciones aplicables en materia de protección de datos personales y privacidad, y a adoptar medidas adecuadas para garantizar el cumplimiento de estas leyes en todas las actividades relacionadas con el manejo de datos personales de sus usuarios.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Tu Consentimiento",
             "answer": "El consentimiento del usuario es fundamental para el procesamiento de sus datos personales por parte de BeatConnect. Al registrarse en la plataforma o utilizar sus servicios, los usuarios aceptan explícitamente los términos y condiciones, así como las políticas de privacidad de BeatConnect. Esto incluye el consentimiento para la recopilación, el almacenamiento y el procesamiento de sus datos personales de acuerdo con las prácticas y políticas establecidas por BeatConnect. Los usuarios tienen derecho a retirar su consentimiento en cualquier momento, lo que puede afectar su capacidad para utilizar ciertas funciones o servicios de la plataforma.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Enlaces Con Otros Sitios Web",
             "answer": "Cuando BeatConnect incluye enlaces a otros sitios web como parte de su servicio, lo hace con el objetivo de ofrecer a los usuarios una experiencia más completa y variada. Sin embargo, es esencial tener en cuenta que no tenemos control sobre el contenido o las prácticas de privacidad de estos sitios externos. A pesar de que hacemos todo lo posible por garantizar que los enlaces que proporcionamos sean seguros y relevantes, no podemos asumir la responsabilidad de la protección y privacidad de cualquier información que usted proporcione mientras visita estos sitios. Es importante que los usuarios comprendan que al hacer clic en un enlace que los lleva a un sitio web externo, están abandonando nuestra plataforma y, por lo tanto, nuestras políticas de privacidad ya no se aplican. Cada sitio web tiene sus propias políticas de privacidad y términos de uso, por lo que recomendamos encarecidamente revisar estas políticas antes de proporcionar cualquier información personal o navegar por el sitio. En última instancia, nuestra intención al proporcionar enlaces a otros sitios web es brindar a los usuarios opciones adicionales y recursos útiles. Sin embargo, la responsabilidad de proteger su información personal mientras navega por estos sitios recae en usted como usuario. Animamos a nuestros usuarios a ser cautelosos y a tomar precauciones adicionales al interactuar con sitios web externos para garantizar su seguridad y privacidad en línea.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Cookies",
             "answer": "Las \"cookies\" son pequeños archivos de texto que los sitios web colocan en tu dispositivo cuando los visitas. Estas cookies pueden contener información sobre tus preferencias, hábitos de navegación, y otros datos que el sitio web puede utilizar para personalizar tu experiencia, recordar tus preferencias, y realizar un seguimiento de tu actividad en línea. En el contexto de BeatConnect, las cookies pueden utilizarse para varios propósitos, como recordar tus credenciales de inicio de sesión para que no tengas que volver a introducirlas cada vez que accedas al sitio, personalizar tu experiencia de usuario según tus preferencias, realizar un seguimiento de cómo interactúas con el sitio para mejorar su funcionamiento, y proporcionar anuncios dirigidos basados en tu historial de navegación. Es importante destacar que BeatConnect probablemente utilice cookies de terceros, como servicios de análisis web y redes de publicidad, para recopilar información sobre tu actividad en línea con el fin de ofrecer servicios y funciones adicionales, como análisis de tráfico del sitio y publicidad personalizada. En la política de privacidad de BeatConnect, se debe explicar claramente cómo se utilizan las cookies, qué tipos de cookies se utilizan, cómo puedes controlar su uso y cómo se gestionan tus preferencias de privacidad en relación con las cookies.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Información Sobre El Reglamento General De Protección De Datos",
             "answer": "El Reglamento General de Protección de Datos (GDPR, por sus siglas en inglés) es una ley de la Unión Europea que entró en vigencia el 25 de mayo de 2018. Su objetivo principal es proteger los datos personales y la privacidad de los individuos dentro de la Unión Europea y del Espacio Económico Europeo. El GDPR establece una serie de principios y obligaciones que las organizaciones deben cumplir al procesar datos personales. Algunos de los aspectos clave del GDPR incluyen: Consentimiento: Las organizaciones deben obtener el consentimiento explícito de los individuos antes de procesar sus datos personales. Derechos de los individuos: El GDPR otorga a los individuos una serie de derechos sobre sus datos personales, incluido el derecho de acceso, rectificación, eliminación y portabilidad de sus datos. Responsabilidad y transparencia: Las organizaciones deben ser transparentes en cuanto a cómo procesan los datos personales y deben implementar medidas adecuadas para proteger la privacidad de los individuos. Notificación de violaciones de datos: Las organizaciones deben notificar a las autoridades de protección de datos y a los individuos afectados en caso de una violación de datos que pueda suponer un riesgo para los derechos y libertades de los individuos. Transferencias internacionales de datos: El GDPR establece restricciones sobre la transferencia de datos personales fuera de la Unión Europea, garantizando que se mantenga un nivel adecuado de protección de datos.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Qué Son Los Datos Personales?",
             "answer": "Los datos personales son cualquier información que pueda identificar directa o indirectamente a una persona específica. Esto incluye una amplia gama de datos, como nombres, direcciones, números de teléfono, direcciones de correo electrónico, números de identificación, datos de ubicación, datos biométricos y cualquier otra información que se pueda utilizar para identificar a una persona en particular. Los datos personales también pueden incluir opiniones, preferencias, intereses y otros aspectos que describen a una persona individualmente. Es importante tener en cuenta que, bajo el Reglamento General de Protección de Datos (GDPR), la definición de datos personales es muy amplia y abarca cualquier información relativa a una persona física identificada o identificable.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "¿Por Qué Es Importante El GDPR?",
             "answer": "El GDPR es importante porque fortalece y unifica las leyes de protección de datos en toda la Unión Europea (UE), brindando a los ciudadanos un mayor control sobre sus datos personales y estableciendo estándares más estrictos para las empresas y organizaciones que recopilan y procesan datos personales. Algunas de las razones por las que el GDPR es importante incluyen: Protección de la privacidad, Control del usuario, Responsabilidad de las empresas, Estándares uniformes.",
             "hasButton": false
         },
         {
+            "section": "politica y privacidad",
             "question": "Derechos Individuales Del Interesado: Acceso, Portabilidad Y Eliminación De Datos",
             "answer": "Los derechos individuales del interesado, garantizados por el GDPR, incluyen varios aspectos clave que otorgan a las personas un mayor control sobre sus datos personales. Estos derechos incluyen: Derecho de acceso, Derecho de portabilidad, Derecho de rectificación, Derecho de supresión (o derecho al olvido).",
             "hasButton": false
         },
         {
-            "question": "Ley Que Rige",
-            "answer": "La legislación que rige la protección de datos personales puede variar según el país en el que opera BeatConnect y la ubicación de sus usuarios. En general, la recopilación, el almacenamiento y el procesamiento de datos personales están sujetos a leyes y regulaciones específicas, como el Reglamento General de Protección de Datos (RGPD) en la Unión Europea, la Ley de Privacidad del Consumidor de California (CCPA) en los Estados Unidos, y otras leyes de privacidad y protección de datos en diferentes jurisdicciones. BeatConnect se compromete a cumplir con todas las leyes y regulaciones aplicables en materia de protección de datos personales y privacidad, y a adoptar medidas adecuadas para garantizar el cumplimiento de estas leyes en todas las actividades relacionadas con el manejo de datos personales de sus usuarios.",
+            "section": "terminos y condiciones",
+            "question": "¿Qué implica el Registro en BeatConnect?",
+            "answer": "Para utilizar ciertas funciones del Servicio, es posible que debas registrarte como usuario. Al registrarte, aceptas proporcionar información precisa y completa. Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, y aceptas notificarnos de cualquier uso no autorizado de tu cuenta.",
             "hasButton": false
         },
         {
-            "question": "Tu Consentimiento",
-            "answer": "El consentimiento del usuario es fundamental para el procesamiento de sus datos personales por parte de BeatConnect. Al registrarse en la plataforma o utilizar sus servicios, los usuarios aceptan explícitamente los términos y condiciones, así como las políticas de privacidad de BeatConnect. Esto incluye el consentimiento para la recopilación, el almacenamiento y el procesamiento de sus datos personales de acuerdo con las prácticas y políticas establecidas por BeatConnect. Los usuarios tienen derecho a retirar su consentimiento en cualquier momento, lo que puede afectar su capacidad para utilizar ciertas funciones o servicios de la plataforma.",
+            "section": "terminos y condiciones",
+            "question": "¿Cómo debe ser la Conducta del Usuario?",
+            "answer": "Te comprometes a utilizar el Servicio de manera adecuada y respetuosa. No debes utilizar el Servicio para actividades ilegales, fraudulentas o que violen los derechos de otros usuarios o terceros.",
             "hasButton": false
         },
         {
-            "question": "Información Que Recopilamos",
-            "answer": "BeatConnect recopila información personal y no personal de sus usuarios. La información personal puede incluir, entre otros, nombre, dirección de correo electrónico, número de teléfono, y datos de ubicación. También podemos recopilar información no personal, como datos de uso y estadísticas sobre la interacción del usuario con la plataforma. La recopilación de esta información es esencial para proporcionar y mejorar nuestros servicios, y para cumplir con nuestras obligaciones legales.",
+            "section": "terminos y condiciones",
+            "question": "¿Qué responsabilidad tiene BeatConnect sobre el Contenido?",
+            "answer": "Al utilizar el Servicio, puedes acceder a contenido proporcionado por nosotros, otros usuarios o terceros. No nos hacemos responsables de la exactitud, integridad o legalidad de dicho contenido.",
             "hasButton": false
         },
         {
-            "question": "Uso De Tu Información",
-            "answer": "La información recopilada por BeatConnect se utiliza para diversos fines, incluyendo la provisión y mejora de nuestros servicios, la personalización de la experiencia del usuario, la comunicación con los usuarios sobre actualizaciones y ofertas, y el cumplimiento de obligaciones legales. También podemos utilizar la información para fines de análisis y para investigar tendencias de uso, con el fin de optimizar nuestra plataforma y servicios.",
+            "section": "terminos y condiciones",
+            "question": "¿Qué derechos de Propiedad Intelectual se aplican?",
+            "answer": "Todo el contenido disponible a través del Servicio, incluyendo texto, gráficos, logotipos, imágenes, videos y software, está protegido por derechos de autor y otros derechos de propiedad intelectual.",
             "hasButton": false
         },
         {
-            "question": "Compartir Tu Información",
-            "answer": "BeatConnect no venderá ni alquilará la información personal de sus usuarios a terceros. Sin embargo, podemos compartir información personal con proveedores de servicios externos que nos ayuden a operar nuestra plataforma y a ofrecer nuestros servicios. Estos proveedores están obligados a proteger la información personal y a utilizarla únicamente para los fines establecidos en nuestras políticas de privacidad. También podemos compartir información en caso de ser requerido por la ley o en relación con un proceso judicial.",
+            "section": "terminos y condiciones",
+            "question": "¿Qué Licencia de Uso concede BeatConnect?",
+            "answer": "Te concedemos una licencia limitada, no exclusiva y no transferible para acceder y utilizar el Servicio de acuerdo con estos Términos. No tienes derecho a modificar, distribuir, transmitir, exhibir, realizar, reproducir, publicar, conceder licencias, crear trabajos derivados, transferir o vender ningún contenido del Servicio.",
             "hasButton": false
         },
         {
-            "question": "Seguridad De Tu Información",
-            "answer": "La seguridad de la información personal de nuestros usuarios es una prioridad para BeatConnect. Implementamos medidas de seguridad adecuadas para proteger la información contra el acceso no autorizado, la divulgación, la alteración o la destrucción. Sin embargo, ningún método de transmisión a través de Internet o de almacenamiento electrónico es completamente seguro, por lo que no podemos garantizar su seguridad absoluta. Es importante que los usuarios tomen precauciones para proteger su información personal.",
+            "section": "terminos y condiciones",
+            "question": "¿Cuál es el Alcance de la licencia de BeatConnect?",
+            "answer": "BeatConnect otorga al Usuario una licencia limitada, no exclusiva, intransferible y revocable para acceder y utilizar la plataforma BeatConnect, así como sus servicios asociados, de acuerdo con estos términos y condiciones.",
             "hasButton": false
         },
         {
-            "question": "Acceso Y Control Sobre Tu Información",
-            "answer": "Los usuarios de BeatConnect tienen derecho a acceder a su información personal y a solicitar correcciones si es inexacta o incompleta. También pueden solicitar la eliminación de su información personal, sujeto a ciertas excepciones legales. Para ejercer estos derechos, los usuarios deben comunicarse con BeatConnect a través de los canales establecidos en nuestras políticas de privacidad.",
+            "section": "terminos y condiciones",
+            "question": "¿Qué incluye el Uso Aceptable en BeatConnect?",
+            "answer": "El Usuario se compromete a utilizar la plataforma BeatConnect de manera legal y adecuada, y a cumplir con todas las leyes y regulaciones aplicables.",
             "hasButton": false
         },
         {
-            "question": "Cambios A Esta Política",
-            "answer": "BeatConnect se reserva el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio se publicará en nuestra plataforma y, si los cambios son significativos, se notificará a los usuarios por correo electrónico u otro medio. Se recomienda a los usuarios revisar regularmente esta política para estar informados sobre cómo protegemos su información.",
+            "section": "terminos y condiciones",
+            "question": "¿Quién posee los derechos de Propiedad Intelectual?",
+            "answer": "Todos los derechos de propiedad intelectual relacionados con la plataforma BeatConnect y sus servicios asociados son propiedad exclusiva de BeatConnect. El Usuario no tiene derecho a modificar, distribuir, transmitir, vender o realizar cualquier otro uso no autorizado del contenido de la plataforma.",
             "hasButton": false
         },
         {
-            "question": "Indemnización",
-            "answer": "El usuario acepta indemnizar y eximir de responsabilidad a BeatConnect, así como a sus directores, empleados, afiliados, agentes y contratistas, de y contra cualquier reclamo, demanda, pérdida, responsabilidad, daño o gasto (incluidos, entre otros, los honorarios razonables de abogados) que surjan de o estén relacionados con: El uso del servicio por parte del usuario. La violación de estos términos y condiciones por parte del usuario. La infracción de cualquier derecho de propiedad intelectual u otros derechos de terceros por parte del usuario. Cualquier contenido que el usuario publique o comparta en la plataforma de BeatConnect. Cualquier actividad realizada a través de la cuenta del usuario. Cualquier violación de la ley o regulación aplicable por parte del usuario.",
+            "section": "terminos y condiciones",
+            "question": "¿BeatConnect puede realizar Actualizaciones y Mantenimiento?",
+            "answer": "BeatConnect se reserva el derecho de realizar actualizaciones, mejoras o modificaciones en la plataforma y sus servicios en cualquier momento y sin previo aviso.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
+            "question": "¿Qué sucede con la Terminación de la Licencia?",
+            "answer": "BeatConnect puede terminar esta licencia en cualquier momento si el Usuario incumple estos términos y condiciones. Tras la terminación, el Usuario debe dejar de utilizar la plataforma y eliminar cualquier contenido descargado de la misma.",
+            "hasButton": false
+        },
+        {
+            "section": "terminos y condiciones",
+            "question": "¿Cuál es la Limitación de Responsabilidad de BeatConnect?",
+            "answer": "BeatConnect no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso o la imposibilidad de usar la plataforma BeatConnect, incluso si se ha informado de la posibilidad de tales daños.",
+            "hasButton": false
+        },
+        {
+            "section": "terminos y condiciones",
+            "question": "¿Puede BeatConnect realizar Modificaciones?",
+            "answer": "Nos reservamos el derecho de modificar o actualizar estos Términos en cualquier momento. Cualquier cambio será efectivo al publicar las revisiones en el Servicio. Es tu responsabilidad revisar periódicamente estos Términos para estar al tanto de las modificaciones.",
+            "hasButton": false
+        },
+        {
+            "section": "terminos y condiciones",
+            "question": "¿Qué Ley Aplicable regula los términos?",
+            "answer": "Estos Términos se rigen por las leyes del Estado de California, sin tener en cuenta sus disposiciones sobre conflictos de leyes.",
+            "hasButton": false
+        },
+        {
+            "section": "terminos y condiciones",
+            "question": "¿Qué es el Acuerdo Completo?",
+            "answer": "Estos Términos constituyen el acuerdo completo entre tú y BeatConnect con respecto al uso del Servicio, reemplazando cualquier acuerdo anterior o contemporáneo entre tú y nosotros.",
+            "hasButton": false
+        },
+        {
+            "section": "terminos y condiciones",
             "question": "Sin Garantías",
-            "answer": "BeatConnect se proporciona \"tal cual\" y \"según disponibilidad\", sin garantía de ningún tipo, ya sea expresa o implícita. En la máxima medida permitida por la ley aplicable, BeatConnect renuncia a todas las garantías, expresas o implícitas, incluidas, entre otras, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular y no infracción. BeatConnect no garantiza que el servicio será ininterrumpido, puntual, seguro o libre de errores, que los resultados que puedan obtenerse del uso del servicio serán precisos o confiables, que la calidad de cualquier producto, servicio, información u otro material obtenido por el usuario a través del servicio cumplirá con sus expectativas, ni que cualquier error en el servicio será corregido. El usuario reconoce y acepta que cualquier uso del servicio es bajo su propio riesgo y que será el único responsable de cualquier daño a su dispositivo móvil, pérdida de datos u otro daño que resulte del uso del servicio.",
+            "answer": "BeatConnect se proporciona 'tal cual' y 'según disponibilidad', sin garantía de ningún tipo, ya sea expresa o implícita. En la máxima medida permitida por la ley aplicable, BeatConnect renuncia a todas las garantías, expresas o implícitas, incluidas, entre otras, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular y no infracción. BeatConnect no garantiza que el servicio será ininterrumpido, puntual, seguro o libre de errores, que los resultados que puedan obtenerse del uso del servicio serán precisos o confiables, ni que cualquier error en el servicio será corregido. El uso del servicio es bajo el propio riesgo del usuario.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
             "question": "Limitación de Responsabilidad",
-            "answer": "En la máxima medida permitida por la ley aplicable, ni BeatConnect ni sus directores, empleados, socios, proveedores o afiliados serán responsables ante usted por ningún daño indirecto, incidental, especial, consecuente o punitivo, incluyendo, entre otros, daños personales, pérdida de beneficios, datos, uso, buena voluntad o cualquier otra pérdida intangible, ya sea que dichos daños surjan de un contrato, agravio (incluida la negligencia), responsabilidad estricta u otro, y ya sea que BeatConnect haya sido informado o no de la posibilidad de tales daños. En ningún caso la responsabilidad total de BeatConnect y sus directores, empleados, socios, proveedores o afiliados, por todos los reclamos relacionados con el servicio, incluyendo cualquier garantía implícita, será mayor de lo que pagaste en BeatConnect durante los seis meses anteriores al acto que dio lugar a la responsabilidad.",
+            "answer": "En la máxima medida permitida por la ley aplicable, ni BeatConnect ni sus directores, empleados, socios, proveedores o afiliados serán responsables ante usted por ningún daño indirecto, incidental, especial, consecuente o punitivo. La responsabilidad total de BeatConnect en relación con el servicio no será mayor de lo que pagaste durante los seis meses anteriores al acto que dio lugar a la responsabilidad.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
             "question": "Divisibilidad",
-            "answer": "Si alguna disposición de estos Términos y Condiciones se considera inválida, ilegal o inaplicable por un tribunal competente, dicha disposición será considerada separable de los Términos y Condiciones en su totalidad y no afectará la validez y aplicabilidad de las disposiciones restantes. La parte inválida, ilegal o inaplicable se interpretará de manera consistente con la ley aplicable para reflejar, en la medida máxima posible, las intenciones originales de las partes, y las demás disposiciones permanecerán en pleno vigor y efecto.",
+            "answer": "Si alguna disposición de estos Términos y Condiciones se considera inválida, ilegal o inaplicable por un tribunal competente, dicha disposición será considerada separable de los Términos y Condiciones en su totalidad y no afectará la validez y aplicabilidad de las disposiciones restantes.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
             "question": "Renuncia",
-            "answer": "El hecho de que BeatConnect no haga valer o ejerza cualquier derecho o disposición de estos Términos y Condiciones no constituirá una renuncia a dicho derecho o disposición, a menos que se establezca expresamente por escrito. Cualquier renuncia de BeatConnect a hacer valer cualquier derecho o disposición en virtud de estos Términos y Condiciones será efectiva únicamente si se realiza por escrito y está firmada por un representante autorizado de BeatConnect.",
+            "answer": "El hecho de que BeatConnect no haga valer o ejerza cualquier derecho o disposición de estos Términos y Condiciones no constituirá una renuncia a dicho derecho o disposición, a menos que se establezca expresamente por escrito.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
             "question": "Enmiendas a este Acuerdo",
-            "answer": "BeatConnect se reserva el derecho, a su entera discreción, de modificar o reemplazar estos Términos y Condiciones en cualquier momento. Si realizamos cambios, publicaremos la versión revisada en esta página y actualizaremos la fecha de \"Última actualización\" en la parte superior de esta página. El uso continuado del Servicio después de dichas modificaciones constituirá tu consentimiento a dichos cambios.",
+            "answer": "BeatConnect se reserva el derecho de modificar o reemplazar estos Términos y Condiciones en cualquier momento. Los cambios se publicarán en esta página y el uso continuado del servicio después de tales modificaciones constituirá tu consentimiento a dichos cambios.",
             "hasButton": false
         },
         {
+            "section": "terminos y condiciones",
             "question": "Acuerdo Completo",
-            "answer": "Estos Términos y Condiciones, junto con la Política de Privacidad y cualquier otro acuerdo legalmente vinculante que podamos publicar en nuestro sitio web, constituyen el acuerdo completo entre tú y BeatConnect en relación con tu uso del Servicio, y reemplazan cualquier acuerdo previo o contemporáneo, oral o escrito, entre tú y BeatConnect con respecto a dicho tema.",
+            "answer": "Estos Términos y Condiciones, junto con la Política de Privacidad, constituyen el acuerdo completo entre tú y BeatConnect en relación con tu uso del servicio.",
             "hasButton": false
         },
         {
+            "section": "gestion de cuenta",
             "question": "¿Cómo puedo eliminar mi cuenta?",
             "answer": "Para eliminar tu cuenta, ve a la sección de Eliminación de Cuenta y completa el formulario con tu correo electrónico y motivo. Nuestro equipo procesará tu solicitud en un plazo de 48 horas.",
             "hasButton": true,
             "url": "/delete-account"
         },
         {
+            "section": "gestion de cuenta",
             "question": "¿Qué pasa con mis datos después de eliminar mi cuenta?",
             "answer": "Una vez que tu cuenta sea eliminada, todos tus datos personales serán eliminados permanentemente de nuestros servidores, conforme a nuestra Política de Privacidad.",
             "hasButton": false
         },
         {
+            "section": "gestion de cuenta",
             "question": "¿Puedo recuperar mi cuenta después de eliminarla?",
             "answer": "No, una vez que elimines tu cuenta, no será posible recuperarla. Si deseas volver a usar nuestra aplicación, tendrás que crear una nueva cuenta.",
             "hasButton": false
         },
         {
+            "section": "gestion de cuenta",
             "question": "¿Qué debo hacer si no recibo confirmación de eliminación?",
             "answer": "Si no recibes confirmación en un plazo de 48 horas, por favor contacta a nuestro equipo de soporte en beatconnect@gmail.com.",
             "hasButton": false
         },
         {
-            "question": "¿Qué datos personales recopila la aplicación?",
-            "answer": "Recopilamos los datos necesarios para el funcionamiento de la aplicación, como tu correo electrónico, nombre de usuario y otros datos proporcionados voluntariamente. Para más información, revisa nuestra Política de Privacidad.",
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo cambiar mi contraseña?",
+            "answer": "Para cambiar tu contraseña, ve a la sección de Configuración de Cuenta, selecciona Cambiar Contraseña y sigue las instrucciones para establecer una nueva contraseña.",
+            "hasButton": true,
+            "url": "/settings/change-password"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Qué debo hacer si olvido mi contraseña?",
+            "answer": "Si olvidas tu contraseña, puedes restablecerla haciendo clic en 'Olvidé mi contraseña' en la página de inicio de sesión y siguiendo los pasos para recibir un enlace de restablecimiento.",
+            "hasButton": true,
+            "url": "/forgot-password"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo actualizar mi dirección de correo electrónico?",
+            "answer": "Para actualizar tu dirección de correo electrónico, dirígete a la sección de Configuración de Cuenta, selecciona Cambiar Correo Electrónico y sigue los pasos indicados.",
+            "hasButton": true,
+            "url": "/settings/change-email"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Puedo suspender mi cuenta temporalmente?",
+            "answer": "Actualmente, no ofrecemos la opción de suspender cuentas temporalmente. Si deseas dejar de usar el servicio, puedes eliminar tu cuenta y volver a crearla más adelante.",
             "hasButton": false
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo gestionar las notificaciones que recibo?",
+            "answer": "Puedes gestionar las notificaciones desde la sección de Configuración de Notificaciones en tu cuenta, donde puedes personalizar qué tipo de alertas deseas recibir.",
+            "hasButton": true,
+            "url": "/settings/notifications"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo proteger mi cuenta?",
+            "answer": "Para proteger tu cuenta, te recomendamos activar la autenticación de dos factores (2FA) en la sección de Seguridad de tu cuenta y elegir una contraseña fuerte que no reutilices en otros servicios.",
+            "hasButton": true,
+            "url": "/settings/security"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Puedo vincular mi cuenta con redes sociales?",
+            "answer": "Sí, puedes vincular tu cuenta con servicios de redes sociales como Facebook o Google en la sección de Configuración de Cuenta. Esto te permitirá iniciar sesión más fácilmente.",
+            "hasButton": true,
+            "url": "/settings/social-login"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo desactivar el inicio de sesión social?",
+            "answer": "Para desactivar el inicio de sesión social, ve a la sección de Configuración de Cuenta, selecciona las opciones de redes sociales vinculadas y sigue las instrucciones para desvincularlas.",
+            "hasButton": true,
+            "url": "/settings/social-login"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Cómo puedo verificar mi cuenta?",
+            "answer": "Después de registrarte, recibirás un correo electrónico de verificación. Haz clic en el enlace proporcionado para verificar tu cuenta. Si no recibes el correo, revisa tu carpeta de spam o contáctanos.",
+            "hasButton": true,
+            "url": "/resend-verification"
+        },
+        {
+            "section": "gestion de cuenta",
+            "question": "¿Qué debo hacer si mi cuenta ha sido comprometida?",
+            "answer": "Si crees que tu cuenta ha sido comprometida, te recomendamos cambiar tu contraseña de inmediato y habilitar la autenticación de dos factores (2FA). Si sigues teniendo problemas, contacta a soporte.",
+            "hasButton": true,
+            "url": "/support/security-issue"
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Cómo puedo eliminar mis datos personales de BeatConnect?",
+            "answer": "Para eliminar los datos relacionados con tu cuenta sin eliminar la cuenta en sí, ve a la sección 'Gestión de Datos' en la configuración de la aplicación. Desde allí, puedes solicitar la eliminación de tu historial de actividad, preferencias musicales y otros datos personales almacenados.",
+            "hasButton": true,
+            "url": "/settings/data-management"
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Qué datos puedo eliminar de mi cuenta en BeatConnect?",
+            "answer": "Puedes eliminar tu historial de música escuchada, tus interacciones con amigos, tus preferencias musicales y otros datos recopilados en tu cuenta. Sin embargo, tu cuenta seguirá activa a menos que solicites su eliminación por completo.",
+            "hasButton": false
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Qué pasa con mis datos si solo elimino parte de ellos?",
+            "answer": "Si decides eliminar solo una parte de tus datos (por ejemplo, tu historial de música o interacciones), los datos eliminados se borrarán permanentemente de nuestros servidores, pero tu cuenta seguirá activa para que puedas seguir usando BeatConnect.",
+            "hasButton": false
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Puedo recuperar los datos eliminados de mi cuenta?",
+            "answer": "No, una vez que elimines cualquier dato relacionado con tu cuenta, como tu historial de música o tus interacciones, no podrás recuperarlo. Te recomendamos asegurarte de qué datos deseas eliminar antes de proceder.",
+            "hasButton": false
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Cómo puedo revisar los datos almacenados en mi cuenta de BeatConnect?",
+            "answer": "Puedes revisar todos los datos almacenados en tu cuenta y descargarlos desde la sección de 'Privacidad y Datos' en la configuración de la aplicación. Esta sección te permite ver el tipo de información que has compartido y almacenado.",
+            "hasButton": true,
+            "url": "/settings/privacy"
+        },
+        {
+            "section": "gestion de datos del usuario",
+            "question": "¿Qué debo hacer si quiero eliminar todos mis datos y mi cuenta?",
+            "answer": "Si deseas eliminar todos tus datos y tu cuenta, debes ir a la sección 'Eliminar Cuenta'. Este proceso borrará permanentemente toda la información almacenada, incluyendo tus datos personales y tu perfil.",
+            "hasButton": true,
+            "url": "/delete-account"
         }
     ]
 }

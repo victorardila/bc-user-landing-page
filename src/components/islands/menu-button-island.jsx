@@ -20,8 +20,7 @@ const MenuButtonIsland = () => {
     >
       <Button
         onClick={() => {
-          setSelectedButton("¿Qué es BeatConnect?"); // Guarda el botón seleccionado
-          console.log("¿Qué es BeatConnect?");
+          setSelectedButton("general"); // Guarda el botón seleccionado
         }}
         style={{
           background:
@@ -42,13 +41,12 @@ const MenuButtonIsland = () => {
           boxShadow: "0 0 15px rgba(0, 149, 255, 0.7)", // Efecto de brillo
         }}
       >
-        ¿Qué es BeatConnect?
+        General
       </Button>
 
       <Button
         onClick={() => {
-          setSelectedButton("Políticas y Privacidad"); // Guarda el botón seleccionado
-          console.log("Políticas y Privacidad");
+          setSelectedButton("politica y privacidad"); // Guarda el botón seleccionado
         }}
         style={{
           background:
@@ -73,8 +71,7 @@ const MenuButtonIsland = () => {
 
       <Button
         onClick={() => {
-          setSelectedButton("Términos y Condiciones"); // Guarda el botón seleccionado
-          console.log("Términos y Condiciones");
+          setSelectedButton("terminos y condiciones"); // Guarda el botón seleccionado
         }}
         style={{
           background:
@@ -99,8 +96,7 @@ const MenuButtonIsland = () => {
 
       <Button
         onClick={() => {
-          setSelectedButton("Eliminación de cuenta"); // Guarda el botón seleccionado
-          console.log("Eliminación de cuenta");
+          setSelectedButton("gestion de cuenta"); // Guarda el botón seleccionado
         }}
         style={{
           background:
@@ -120,12 +116,11 @@ const MenuButtonIsland = () => {
           boxShadow: "0 0 15px rgba(0, 149, 255, 0.7)", // Efecto de brillo
         }}
       >
-        Eliminación de cuenta
+        Gestion de cuenta
       </Button>
       <Button
         onClick={() => {
-          setSelectedButton("Eliminación de datos del usuario"); // Guarda el botón seleccionado
-          console.log("Eliminación de datos del usuario");
+          setSelectedButton("gestion de datos del usuario"); // Guarda el botón seleccionado
         }}
         style={{
           background:
@@ -145,7 +140,7 @@ const MenuButtonIsland = () => {
           boxShadow: "0 0 15px rgba(0, 149, 255, 0.7)", // Efecto de brillo
         }}
       >
-        Eliminación de datos del usuario
+        Gestion de datos del usuario
       </Button>
     </div>
   );
