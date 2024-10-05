@@ -76,6 +76,13 @@ const FaqsContainerListIsland = () => {
       ? filteredFaqsSection
       : dataFaqs; // Muestra todas las FAQs si no hay filtro de búsqueda ni sección seleccionada
 
+  // Conteo de preguntas encontradas
+  const totalQuestionsCount = searchTerm
+    ? filteredFaqsSearched.length
+    : selectedButton
+      ? filteredFaqsSection.length
+      : dataFaqs.length;
+
   return (
     <div
       className="container"
@@ -95,10 +102,8 @@ const FaqsContainerListIsland = () => {
           justifyContent: "space-between",
         }}
       >
-        <SearchBar onSearch={handleSearch} />{" "}
-        <span>
-          {searchTerm ? filteredFaqsSearched.length : dataFaqs.length} Preguntas
-        </span>
+        <SearchBar onSearch={handleSearch} />
+        <span>{totalQuestionsCount} Preguntas</span>
       </div>
       <div
         className="container-content-faqs"
