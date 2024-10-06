@@ -175,12 +175,6 @@
   margin-bottom: 15px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -193,4 +187,41 @@ textarea {
 .consent {
   display: flex;
   align-items: center;
+}
+
+.consent label {
+  display: block;
+  margin-bottom: 0;
+  font-weight: bold;
+  width: -webkit-fill-available;
+  text-align: left;
+}
+
+.consent input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(5, 151, 242, 1); /* Borde del checkbox */
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilizar el estado marcado */
+.consent input[type="checkbox"]:checked {
+  background-color: rgba(5, 151, 242, 1); /* Color de fondo al estar marcado */
+  border-color: rgba(5, 151, 242, 1); /* Color del borde */
+}
+
+/* Agregar un ícono o pseudo-elemento para la marca */
+.consent input[type="checkbox"]:checked::after {
+  content: "✓"; /* Icono de check */
+  color: white; /* Color del check */
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 3px;
 }
