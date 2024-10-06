@@ -63,6 +63,13 @@ const FaqsContainerListIsland = () => {
     }
   }, [selectedButton, sections]); // Añade sections como dependencia
 
+  // Detectar si se está haciendo búsqueda para limpiar la selección
+  useEffect(() => {
+    if (searchTerm !== "") {
+      setSelectedButton(null); // Limpia la sección seleccionada cuando se busca
+    }
+  }, [searchTerm, setSelectedButton]);
+
   // Determina si se deben mostrar los dropdowns según la lógica de filtrado
   const shouldShowDefinitionSection =
     selectedButton !== null &&
