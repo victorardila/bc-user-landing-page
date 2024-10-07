@@ -1,4 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { 
+  faCheck,
+  faXmark
+ } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from '../common/button';
 
 // Componente Modal con estilos inline
 interface ModalProps {
@@ -74,9 +80,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 interface AppProps {
   children: React.ReactNode;
   title: string;
+  description: string;
 }
 
-const App: React.FC<AppProps> = ({ children, title }) => {
+const App: React.FC<AppProps> = ({ children, title, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -102,7 +109,41 @@ const App: React.FC<AppProps> = ({ children, title }) => {
       <Modal isOpen={isModalOpen} onClose={closeModal} title={
         title
       }>
-        <p>Este es el contenido dentro del modal.</p>
+        <p>{description}</p>
+        <div className='buttons' style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: '100%',
+          height: '5vh',
+          margin: '10px 0',
+        }}>
+          <Button onClick={closeModal} style={{
+            backgroundColor: 'red',
+            color: 'white',
+            width: '48%',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}>
+            <FontAwesomeIcon icon={faXmark} style={{
+              width: '20px',
+              height: 'auto',
+            }} />
+          </Button>
+          <Button onClick={closeModal} style={{
+            backgroundColor: 'green',
+            color: 'white',
+            width: '48%',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+          }}>
+            <FontAwesomeIcon icon={faCheck} style={{
+              width: '20px',
+              height: 'auto',
+            }} />
+          </Button>
+        </div>
       </Modal>
     </div>
   );

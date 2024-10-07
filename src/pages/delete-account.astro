@@ -90,7 +90,11 @@ const handleDeleteAccount = async () => {
           </div>
         </form>
         <!-- Aquí se renderiza el modal -->
-        <Modal client:load title="¿Estás seguro de eliminar tu cuenta?">
+        <Modal
+          client:load
+          title="¿Estás seguro de eliminar tu cuenta?"
+          description="Al eliminar tu cuenta, perderás acceso a todos los servicios y datos asociados a tu cuenta. Esta acción es irreversible."
+        >
           <!-- Botón activador del modal -->
           <Button
             type="submit"
