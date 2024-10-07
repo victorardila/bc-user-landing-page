@@ -1,4 +1,5 @@
 ---
+// Objetos y estilos de la página
 import "../styles/delete-account.styles.css"; // Asegúrate de que este archivo tenga estilos específicos
 import logo from "../assets/img/logo.png"; // Importa el archivo PNG aquí
 import exampleForUser from "../assets/img/example-to-users.png"; // Importa el archivo PNG aquí
@@ -8,11 +9,14 @@ import {
   faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import LayoutApp from "../layouts/LayoutApp.astro";
-import Button from "../components/common/button.tsx";
 import { auth } from "../api/firebase.ts"; // Importa el objeto de autenticación
 import { deleteUser } from "firebase/auth";
+// Componente de diseño de la página
+import LayoutApp from "../layouts/LayoutApp.astro";
+import Button from "../components/common/button.tsx";
+import Modal from "../components/common/modal.tsx";
 
+// Funciones de la página
 const handleDeleteAccount = async () => {
   const user = auth.currentUser;
 
@@ -78,6 +82,16 @@ const handleDeleteAccount = async () => {
             >
           </div>
           <textarea id="reason" name="reason" rows="4" required></textarea>
+          <div class="form-group consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent"
+              >He leído y acepto las <a href="/">Políticas de Privacidad</a>
+            </label>
+          </div>
+        </form>
+        <!-- Aquí se renderiza el modal -->
+        <Modal client:load title="¿Estás seguro de eliminar tu cuenta?">
+          <!-- Botón activador del modal -->
           <Button
             type="submit"
             onClick={handleDeleteAccount}
@@ -101,7 +115,7 @@ const handleDeleteAccount = async () => {
             />
             Solicitar eliminación de cuenta
           </Button>
-        </form>
+        </Modal>
       </section>
 
       <section id="contact" class="contact">

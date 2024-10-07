@@ -1,9 +1,10 @@
 ---
-import FaqPage from "./faq.astro";
+// Objetos y estilos de la pagina
 import "../styles/index.styles.css";
+// Componentes de la página
 import LayoutApp from "../layouts/LayoutApp.astro";
-
-// Función para obtener el año actual
+import FaqPage from "./faq.astro";
+// Funciones de la página
 export function getYear() {
   return new Date().getFullYear();
 }
