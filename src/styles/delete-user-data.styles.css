@@ -175,9 +175,15 @@
   margin-bottom: 15px;
 }
 
+.form-group label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
+  font-size: 18px;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
